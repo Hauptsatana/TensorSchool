@@ -5,7 +5,7 @@
     </div>
     <div class="card-body">
       <h5 class="card-title" :title="title">{{ title }}</h5>
-      <h4 class="card-price">{{ price }} </h4>
+      <h4 class="card-price">{{ price }} руб.</h4>
       <add-to-cart-btn
         ref="addBtn"
         class="card-add-btn"
@@ -40,18 +40,15 @@ export default {
     cardClasses() {
       return { "border-warning": this.itemAdded, "border-3": this.itemAdded };
     },
-  },
-  mounted() {
-    //   nextTick(() => {
-    //       this.$refs.addBtn.$on('itemAdded', this.itemAddedHandler);
-    //   });
-  },
+  }
 };
 </script>
 
 <style scoped>
+
 .card {
   height: 400px;
+  text-align: center;
 }
 
 .card-title {

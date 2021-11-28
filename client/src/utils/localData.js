@@ -54,3 +54,5 @@ const phones = [
       photo: "https://avatars.mds.yandex.net/get-mpic/5243677/img_id2555607244595963599.png/orig"
    },
 ];
+
+export { phones }
