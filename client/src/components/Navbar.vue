@@ -26,14 +26,17 @@
           </li>
         </ul>
       </div>
-      <button class="btn btn-light" type="button">Корзина</button>
+
+      <!-- Корзина -->
+      <basket></basket>
     </div>
   </nav>
 </template>
 
 <script>
+import Basket from "./Basket.vue";
 export default {
-
+    components: { Basket }
 }
 </script>
 
