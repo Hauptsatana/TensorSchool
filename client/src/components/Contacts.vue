@@ -1,9 +1,7 @@
 <template>
-  <div>
-     Какой-то телефон
-  </div>
-  <div>
-     Какой-то адрес
+  <div class="contacts__container">
+    <div>Какой-то телефон</div>
+    <div>Какой-то адрес</div>
   </div>
 </template>
 

@@ -2,13 +2,10 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import Navbar from './components/Navbar.vue';
-import Catalog from './components/Catalog.vue';
-
 
 export default {
   components: {
-    Navbar,
-    Catalog
+    Navbar
   }
 };
 
@@ -17,7 +14,7 @@ export default {
 <template>
   <div>
     <navbar></navbar>
-    <catalog class="page-content"></catalog>
+    <router-view class="page-content"></router-view>
   </div>
 
 </template>
