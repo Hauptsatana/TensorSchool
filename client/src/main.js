@@ -5,10 +5,12 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 import Catalog from './components/Catalog.vue';
 import Contacts from './components/Contacts.vue';
+import TinderGame from './components/TinderGame.vue';
 
 const routes = [
    { path: '/', component: Catalog },
-   { path: '/contacts', component: Contacts }
+   { path: '/contacts', component: Contacts },
+   { path: '/tinder', component: TinderGame }
 ]
 
 const router = createRouter({

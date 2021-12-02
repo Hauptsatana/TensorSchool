@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="app__container">
     <navbar></navbar>
     <router-view class="page-content"></router-view>
   </div>
@@ -20,11 +20,31 @@ export default {
 </template>
 
 <style>
+html, body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.app__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-content {
