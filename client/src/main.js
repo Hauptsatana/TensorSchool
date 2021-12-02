@@ -1,7 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.css'
-import { createRouter, createWebHashHistory } from 'vue-router';
+import {
+   createRouter,
+   createWebHashHistory
+} from 'vue-router';
 
 import Catalog from './components/Catalog.vue';
 import Contacts from './components/Contacts.vue';
@@ -15,6 +18,7 @@ const routes = [
 
 const router = createRouter({
    history: createWebHashHistory(),
+   linkExactActiveClass: 'active',
    routes: routes
 });
 
